@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/khw1031/doton/compare/v0.1.3...v0.1.5) (2025-03-10)
+
+
+### Bug Fixes
+
+* bin resolution ([ebdbaae](https://github.com/khw1031/doton/commit/ebdbaaecedb08e99be0d21a498aa02594a72c388))
+* update bin field in package.json for proper CLI execution ([f89552f](https://github.com/khw1031/doton/commit/f89552f4d6c9024cf22696d84c82af0dd47e1482))
+
 ### [0.1.4](https://github.com/khw1031/doton/compare/v0.1.3...v0.1.4) (2025-03-10)
 
 
