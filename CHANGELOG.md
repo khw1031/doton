@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/khw1031/doton/compare/v0.1.0...v0.1.2) (2025-03-10)
+
+
+### Bug Fixes
+
+* remove .vscode from .npmignore ([d01b87e](https://github.com/khw1031/doton/commit/d01b87ed2d8a1fd98528ab60f078517c2eeae1fc))
+
 ## 0.1.0 (2025-03-10)
 
 ### Features
