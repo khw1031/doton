@@ -1,6 +1,6 @@
 {
   "name": "doton",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "CLI tool to initialize development configurations for Cursor IDE and more",
   "main": "dist/index.js",
   "bin": {
