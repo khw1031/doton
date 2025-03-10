@@ -4,7 +4,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## 0.1.0 (2025-03-10)
 
-
 ### Features
 
 * **vscode:** add vscode feature ([9f0a1d8](https://github.com/khw1031/doton/commit/9f0a1d8e68851af3837e1bcb1d70d4c22ea0eb9c))
@@ -51,4 +50,4 @@ All notable changes to this project will be documented in this file. See [standa
 - Set up automated CHANGELOG generation with standard-version
 - Configured commitlint for conventional commit enforcement
 - Added Husky hooks for Git workflow (pre-commit, commit-msg, post-commit)
-- Added npm scripts for development, building, testing, and releasing 
+- Added npm scripts for development, building, testing, and releasing
