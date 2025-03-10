@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Skip message for release commits
+git log -1 --pretty=%B | grep -q "^chore(release)" && exit 0
+
+echo "✅ Your commit is done. Run 'pnpm release' to generate a new release with changelog."
+echo ""
+echo "📝 Release management options:"
+echo "  - Run 'pnpm release' for patch release"
+echo "  - Run 'pnpm release:minor' for minor release"
+echo "  - Run 'pnpm release:major' for major release"
+echo ""
+echo "These commands will:"
+echo "  1. Update the version in package.json"
+echo "  2. Update CHANGELOG.md based on your commits"
+echo "  3. Create a git tag for the new version"
+echo ""
+echo "After running a release command, push with: git push --follow-tags origin main" 

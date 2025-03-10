@@ -1,0 +1,23 @@
+# Source files
+src/
+tests/
+*.test.ts
+
+# Development configuration
+.vscode/
+.github/
+.git/
+.gitignore
+.eslintignore
+eslint.config.js
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
+
+# Build tools and dependencies
+node_modules/
+pnpm-lock.yaml
+
+# Other
+.nvmrc
+.npmrc 

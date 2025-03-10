@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Check if we're pushing to main branch
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+if [ "$BRANCH" = "main" ]; then
+  echo "📦 Pushing to main branch, checking CHANGELOG..."
+  
+  # Get the current package version
+  PACKAGE_VERSION=$(node -p "require('./package.json').version")
+  
+  # Check if CHANGELOG contains an entry for the current version
+  if ! grep -q "\[$PACKAGE_VERSION\]" CHANGELOG.md; then
+    echo "❌ No entry for version $PACKAGE_VERSION found in CHANGELOG.md"
+    echo "Please update CHANGELOG.md before pushing to main"
+    exit 1
+  else
+    echo "✅ CHANGELOG.md contains entry for version $PACKAGE_VERSION"
+  fi
+fi 
