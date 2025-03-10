@@ -35,15 +35,45 @@ const configurations: Configurations = {
 };
 
 /**
- * Check if command is valid and return true if it is 'init'
+ * Show package version
  */
-export function isValidCommand(command: string | undefined): boolean {
-  if (command !== 'init') {
-    console.log(chalk.red('Error: Unknown command'));
-    console.log(chalk.yellow(`Usage: ${chalk.bold('npx doton init')}`));
+export async function showVersion(): Promise<void> {
+  try {
+    const packageJson = JSON.parse(
+      await fs.readFile(path.join(__dirname, '..', 'package.json'), 'utf-8'),
+    );
+    console.log(`v${packageJson.version}`);
+  } catch (error) {
+    console.error(chalk.red('Error: Failed to read package version'));
+    process.exit(1);
+  }
+}
+
+/**
+ * Check if command is valid
+ */
+export async function isValidCommand(command: string | undefined): Promise<boolean> {
+  if (!command) {
+    console.log(chalk.red('Error: No command provided'));
+    console.log(chalk.yellow(`Usage: ${chalk.bold('npx doton')} [command]`));
+    console.log('\nCommands:');
+    console.log('  init          Initialize development configurations');
+    console.log('  -v, --version Show package version');
     return false;
   }
-  return true;
+
+  if (command === 'init') return true;
+  if (command === '-v' || command === '--version') {
+    await showVersion();
+    return false;
+  }
+
+  console.log(chalk.red('Error: Unknown command'));
+  console.log(chalk.yellow(`Usage: ${chalk.bold('npx doton')} [command]`));
+  console.log('\nCommands:');
+  console.log('  init          Initialize development configurations');
+  console.log('  -v, --version Show package version');
+  return false;
 }
 
 /**
@@ -138,9 +168,15 @@ export async function init(): Promise<void> {
 // Only call init if this file is being executed directly
 if (import.meta.url === `file://${process.argv[1]}`) {
   const command = process.argv[2];
-  if (isValidCommand(command)) {
-    init();
-  } else {
+
+  (async (): Promise<void> => {
+    if (await isValidCommand(command)) {
+      await init();
+    } else {
+      process.exit(1);
+    }
+  })().catch((error) => {
+    console.error(chalk.red(`Error: ${error.message}`));
     process.exit(1);
-  }
+  });
 }
