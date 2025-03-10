@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/khw1031/doton/compare/v0.1.5...v0.1.6) (2025-03-10)
+
+
+### Bug Fixes
+
+* build to cjs ([673fa97](https://github.com/khw1031/doton/commit/673fa975a800689b0fc0982d6c8da3b2ccf0ce5a))
+
 ### [0.1.5](https://github.com/khw1031/doton/compare/v0.1.3...v0.1.5) (2025-03-10)
 
 
