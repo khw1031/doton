@@ -1,9 +1,13 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## 0.1.0 (2025-03-10)
+
+
+### Features
+
+* **vscode:** add vscode feature ([9f0a1d8](https://github.com/khw1031/doton/commit/9f0a1d8e68851af3837e1bcb1d70d4c22ea0eb9c))
 
 ## [0.0.2] - 2025-03-10
 
