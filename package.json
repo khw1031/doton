@@ -4,7 +4,7 @@
   "description": "CLI tool to initialize development configurations for Cursor IDE and more",
   "main": "dist/index.js",
   "bin": {
-    "doton": "./dist/index.js"
+    "doton": "./dist/index.cjs"
   },
   "type": "module",
   "packageManager": "pnpm@10.5.1",

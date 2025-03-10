@@ -2,17 +2,14 @@ import { defineConfig } from 'tsup';
 
 export default defineConfig({
   entry: ['src/index.ts'],
-  format: ['esm'],
+  format: ['cjs', 'esm'],
   sourcemap: true,
   clean: true,
   dts: true,
   shims: true,
-  banner: ({ format }) => {
-    if (format === 'esm') {
-      return {
-        js: '#!/usr/bin/env node',
-      };
-    }
-    return {};
+  banner: () => {
+    return {
+      js: '#!/usr/bin/env node',
+    };
   },
-}); 
+});
