@@ -42,7 +42,8 @@ doton init
 2. 메뉴에서 구성 유형 선택:
    ```
    초기화할 구성 선택:
-   > cursor - Cursor IDE 구성
+   > cursor - Cursor 구성
+   > vscode - VSCode 구성
    ```
 
 3. 구성을 저장할 대상 디렉토리 입력:
@@ -54,7 +55,22 @@ doton init
 
 ## 사용 가능한 구성
 
-- **cursor** - Cursor IDE 구성
+- **cursor** - Cursor 구성
+  - ESLint 구성
+  - Prettier 구성
+  - TypeScript 설정
+  - 에디터 설정
+  - 권장 확장 프로그램
+
+- **vscode** - Visual Studio Code 구성
+  - ESLint 통합
+  - 저장 시 자동 포맷팅
+  - TypeScript SDK 경로
+  - 에디터 설정 (줄 끝 문자, 후행 공백, 마지막 줄 개행)
+  - 권장 확장 프로그램:
+    - ESLint
+    - Prettier
+    - Code Spell Checker
 
 ## 개발
 
@@ -126,4 +142,4 @@ MIT
 
 ## 후원하기
 
-이 도구가 도움이 되었다면, [커피 한 잔](https://buymeacoffee.com/fkmgifhne) 사주세요! 
+이 도구가 도움이 되었다면, [커피 한 잔](https://buymeacoffee.com/fkmgifhne) 사주세요!

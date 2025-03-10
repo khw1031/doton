@@ -42,7 +42,8 @@ doton init
 2. Choose a configuration type from the menu:
    ```
    Choose which config to initialize:
-   > cursor - Cursor IDE configuration
+   > cursor - Cursor configuration
+   > vscode - VSCode configuration
    ```
 
 3. Enter the target directory where you want to save the configuration:
@@ -54,7 +55,8 @@ doton init
 
 ## Available Configurations
 
-- **cursor** - Cursor IDE configuration
+- **cursor** - Cursor configuration
+- **vscode** - Visual Studio Code configuration
 
 ## Development
 

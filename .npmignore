@@ -4,7 +4,6 @@ tests/
 *.test.ts
 
 # Development configuration
-.vscode/
 .github/
 .git/
 .gitignore
@@ -20,4 +19,4 @@ pnpm-lock.yaml
 
 # Other
 .nvmrc
-.npmrc 
+.npmrc
