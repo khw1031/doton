@@ -3,7 +3,6 @@ import chalk from 'chalk';
 import fs from 'fs-extra';
 import path from 'path';
 import ora from 'ora';
-import { fileURLToPath } from 'url';
 
 // Define types for configurations
 interface Configuration {
@@ -16,9 +15,8 @@ interface Configurations {
   [key: string]: Configuration;
 }
 
-// Get dirname in ESM
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// Get dirname in Node.js environment (compatible with ES6)
+const __dirname = path.dirname(require.main?.filename || '');
 
 // Available configurations
 const configurations: Configurations = {
@@ -166,7 +164,7 @@ export async function init(): Promise<void> {
 }
 
 // Only call init if this file is being executed directly
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (require.main === module) {
   const command = process.argv[2];
 
   (async (): Promise<void> => {
