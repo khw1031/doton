@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.7](https://github.com/khw1031/doton/compare/v0.1.6...v0.1.7) (2025-03-11)
+
+
+### Bug Fixes
+
+* build to iife ([2b18b27](https://github.com/khw1031/doton/commit/2b18b274f3a031a48c64e2ba4b92ab9d96a62f35))
+
 ### [0.1.6](https://github.com/khw1031/doton/compare/v0.1.5...v0.1.6) (2025-03-10)
 
 
