@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.8](https://github.com/khw1031/doton/compare/v0.1.7...v0.1.8) (2025-04-01)
+
+
+### Features
+
+* **vscode:** add vscode feature ([9f0a1d8](https://github.com/khw1031/doton/commit/9f0a1d8e68851af3837e1bcb1d70d4c22ea0eb9c))
+
+
+### Bug Fixes
+
+* bin resolution ([ebdbaae](https://github.com/khw1031/doton/commit/ebdbaaecedb08e99be0d21a498aa02594a72c388))
+* build to cjs ([673fa97](https://github.com/khw1031/doton/commit/673fa975a800689b0fc0982d6c8da3b2ccf0ce5a))
+* build to iife ([2b18b27](https://github.com/khw1031/doton/commit/2b18b274f3a031a48c64e2ba4b92ab9d96a62f35))
+* remove .vscode from .npmignore ([d01b87e](https://github.com/khw1031/doton/commit/d01b87ed2d8a1fd98528ab60f078517c2eeae1fc))
+* update bin field in package.json for proper CLI execution ([f89552f](https://github.com/khw1031/doton/commit/f89552f4d6c9024cf22696d84c82af0dd47e1482))
+
 ### [0.1.7](https://github.com/khw1031/doton/compare/v0.1.6...v0.1.7) (2025-03-11)
 
 
