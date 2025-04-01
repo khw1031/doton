@@ -4,4 +4,3 @@ globs:
 alwaysApply: true
 ---
 - Be terse
-- Always refer to the project-specific configuration file when running commands and select build commands based on the results.
